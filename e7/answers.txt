@@ -1,0 +1,6 @@
+1. The residuals are not close enough to being normal. We cannot reasonably conclude that the 
+ratings are increasing.
+
+2. The new prediction seems to be doing a better job of not smoothing as much as the previous 
+one did. Now, the Kalman filter seems to be able to capture the sudden spikes in CPU 
+temperature present in the data much better than the previous one did, providing better results.

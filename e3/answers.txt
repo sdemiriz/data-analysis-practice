@@ -1,0 +1,7 @@
+1. LOWESS missed a lot of the smaller temperature spikes while Kalman was more accurate at detecting them, giving more accurate spikes in those cases. This is 
+of course said assuming all the temperature spikes were genuine and not false readings. Kalman did not smoothe over and/or ignore lesser variations in 
+temperatures like LOWESS did, giving a more detailed look on the readings. Yet it was able to remove sufficient noise to produce a reasonable, non-overfit plot.
+
+2. Speed would benefit us in a scenario where the person is standing, like waiting for a traffic light to switch etc. where we could ignore the cluster of data
+that will form from the nearly identical noisy GPS readings produced by the person standing still. Course could be used along with the speed, latitude and
+longitude data to more accurately determine the person's movements, allowing for more accurate smoothing.

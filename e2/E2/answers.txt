@@ -1,0 +1,9 @@
+1. The type of the values is float64. The values are from 
+10.71 to 14.25, and are generally increasing as the date
+increases.
+
+2. This produces a fit on the graph due to datetime and
+timestamps having float representations under the hood.
+The plot represents both axes as floats when representing
+the data, and due to both having the same amount of values
+it has no problem aligning the two axes of values.

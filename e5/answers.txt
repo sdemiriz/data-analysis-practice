@@ -1,0 +1,15 @@
+1.  Applying the log-transformation to the data gave the best result that satisfied our assumptions.
+
+2.  Running the T-test on non-transformed data:
+    The number of comments on weekdays and weekends is significantly different.
+
+    Running the T-test on log-transformed data:
+    The log-transformed number of comments on weekdays and weekends is significantly different.
+
+3.  I believe the weekly data is the best, in our case, to get an answer to the original question. 
+    Perhaps comparing the weekdays to the weekend that follows them and drawing conclusions from
+    the results of this comparison might be a more realistic way to approach the question at hand.
+    The events that had occured during weekdays are likely to influence the quantity of comments 
+    in the following days and the weekend.
+
+4.  More comments are posted in /r/canada on average weekdays than average weekends.

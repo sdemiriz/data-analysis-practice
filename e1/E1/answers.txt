@@ -1,0 +1,17 @@
+Sedat Demiriz 301283571 sdemiriz@sfu.ca
+
+Q1 - They were about equal in terms of the ease of working with them
+    as they share most syntax, and both are clear and concise code-wise.
+    How the data appeared was easier to read on Pandas dues to the 
+    names of rows and columns being displayed clearly rather than being
+    implied as in the Numpy implementation. The latter might be a side
+    effect of me using Jupyter Notebook to view the data, however.
+
+Q2 - The Pandas implementation ran at   46.4 ms +- 5.16 ms per loop
+     The loop implementation ran at     600 ms +- 2.61 ms per loop
+
+    So the pandas implementation was about 12 times faster than the 
+    loop implementation. This is due to Pandas having less overhead 
+    in its code and being run through its own optimized C-based array 
+    approach rather than Python's own unoptimized pointer array 
+    approach.

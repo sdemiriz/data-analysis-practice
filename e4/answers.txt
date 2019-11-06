@@ -1,0 +1,17 @@
+Sedat Demiriz - 301283571 - sdemiriz@sfu.ca
+
+1. Looking at the produced plot, average max temperature does not seem to have much, if any correlation
+with population density. However, a clear observation can be made about a large majority of cities,
+regardless of their population density, residing in the average temperature range of 15-30 degrees
+celsius. A model based on this data will likely place any new predictions in this range of temperatures.
+If the population density is low enough for a prediction, as in comparable to those cities in the 5-10 
+degrees celsius average temperature range, they might be placed in that range instead. However the raw
+amount of data points in the 15-30 degree range will likely have a larger effect on the model and will
+likely influence predictions drastically.
+
+2. An uncompressed json file, in some cases, might take up our entire available memory, if not more. If
+we decompress the json file as a part of our workflow, read as much of it into memory and feed it into 
+pandas/numpy we might require additional accesses to get the rest of the json file from disk. Since disk
+accesses are slow compared to memory accesses, it is preferable to just load the compressed json file 
+into memory, then access it by decompressing as much of it as needed without accessing the disk several 
+times. This should improve our runtime.

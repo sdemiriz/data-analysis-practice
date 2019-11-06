@@ -1,0 +1,58 @@
+1. I do believe that we are p-hacking in this question. The reason is that our focus changed
+from answering the given question in the context of the data from everyone to the context
+of the data that came exclusively from instructors. Noticing a detail in our data and 
+then switching to work exclusively on that part of the data, which is more likely to give 
+a significant result, in my opinion, counts as p-hacking.
+
+I am comfortable when coming to the conclusion on the p-value from instructors being 0.0225
+due to the good amount of data points backing up our conclusions.
+
+2. 21 tests, given by each of the 7 categories being compared against all others, aka 7 
+choose 2 comparisons. The probability of getting a correct result by chance would be
+0.05^21.
+
+3. SFUcloud Ranking:
+ - qs1
+ - qs3
+ - qs2/partition_sort -> can't distinguish
+ - qs4/qs5            -> can't distinguish
+ - merge1
+
+SFUcloud SSH data:
+
+Data Means 
+qs1               0.027428
+qs2               0.066971
+qs3               0.060835
+qs4               0.073554
+qs5               0.076027
+merge1            0.102507
+partition_sort    0.067376
+dtype: float64 
+
+        Multiple Comparison of Means - Tukey HSD, FWER=0.05         
+====================================================================
+    group1         group2     meandiff p-adj   lower   upper  reject
+--------------------------------------------------------------------
+        merge1 partition_sort  -0.0351  0.001 -0.0384 -0.0319   True
+        merge1            qs1  -0.0751  0.001 -0.0783 -0.0718   True
+        merge1            qs2  -0.0355  0.001 -0.0388 -0.0323   True
+        merge1            qs3  -0.0417  0.001 -0.0449 -0.0384   True
+        merge1            qs4   -0.029  0.001 -0.0322 -0.0257   True
+        merge1            qs5  -0.0265  0.001 -0.0297 -0.0232   True
+partition_sort            qs1  -0.0399  0.001 -0.0432 -0.0367   True
+partition_sort            qs2  -0.0004    0.9 -0.0037  0.0028  False
+partition_sort            qs3  -0.0065  0.001 -0.0098 -0.0033   True
+partition_sort            qs4   0.0062  0.001  0.0029  0.0094   True
+partition_sort            qs5   0.0087  0.001  0.0054  0.0119   True
+           qs1            qs2   0.0395  0.001  0.0363  0.0428   True
+           qs1            qs3   0.0334  0.001  0.0302  0.0367   True
+           qs1            qs4   0.0461  0.001  0.0429  0.0494   True
+           qs1            qs5   0.0486  0.001  0.0453  0.0518   True
+           qs2            qs3  -0.0061  0.001 -0.0094 -0.0029   True
+           qs2            qs4   0.0066  0.001  0.0033  0.0098   True
+           qs2            qs5   0.0091  0.001  0.0058  0.0123   True
+           qs3            qs4   0.0127  0.001  0.0095   0.016   True
+           qs3            qs5   0.0152  0.001  0.0119  0.0184   True
+           qs4            qs5   0.0025 0.2711 -0.0008  0.0057  False
+--------------------------------------------------------------------

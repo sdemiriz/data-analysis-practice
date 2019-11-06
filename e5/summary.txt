@@ -1,0 +1,56 @@
+File 1: 
+Linearly increasing relationship of x and y values featuring some noise.
+                x           y
+mean     8.717696   12.522874
+std     12.155517    6.639964
+min    -22.635878   -2.565088
+max     35.237055   27.384153
+Correlation coefficient:  0.9503256954375482
+
+File 2:
+Linearly increasing relationship of x and y values, with possibly several outliers.
+                x           y
+mean    -0.710787   -0.748987
+std     11.481584    6.257918
+min    -33.271113  -18.621804
+max     27.647000   14.147315
+Correlation coefficient:  0.9551531665750373
+
+File 3:
+Increasing, clustered data forming four distinct clusters.
+                x           y
+mean     0.968907    8.508535
+std      2.235558    1.149301
+min     -2.449064    6.641734
+max      4.518885   10.551871
+Correlation coefficient:  0.9819372646760665
+
+File 4:
+Positive nonsensical x and y data points without a trend, forming a logo of an 
+educational institution when plotted.
+                x           y
+mean    49.905086   18.553837
+std     28.508611   16.545896
+min      0.000000    0.000000
+max     87.376700   44.565040
+Correlation coefficient:  -0.08119306735490815
+
+File 5:
+5 distinct groupings of y values around based on x values with some noise.
+                x           y
+mean    49.909994   18.555525
+std     28.500001   16.540796
+min      4.337892    0.055498
+max     91.052863   49.934197
+Correlation coefficient:  -0.08823598983058883
+
+File 6:
+Linearly increasing relationship of x and y values, with possibly several distinct 
+outliers but very little noise. The outliers are the likely culprit behind the 
+lowered correlation value.
+                x           y
+mean     7.216155    7.602215
+std     11.921599   11.764382
+min    -24.333821  -22.956357
+max     35.402139   36.079874
+Correlation coefficient:  0.9350685662094905

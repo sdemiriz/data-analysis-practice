@@ -1,0 +1,10 @@
+1.
+The K-Nearest Neighbors classifier had the best results. This is likely due to a point that is 
+surrounded mostly by other points of similar colors is much more likely to be of that color as 
+well, rather than being of a different color. The latter only occurs on the boundaries between 
+the color spaces.
+
+2.
+The model mostly mispredicts when the climates of a given pair of cities are very similar such
+ as Vancouver and Seattle or Calgary and Edmonton. Yearly sunny days might give another lead
+ for the algorithm to be able to predict more accurately. 
